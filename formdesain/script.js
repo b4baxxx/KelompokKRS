@@ -1,20 +1,22 @@
-function showSection(sectionId) {
-    const sections = document.querySelectorAll('.section');
-    sections.forEach(section => {
-        section.classList.remove('active');
-    });
-    document.getElementById(sectionId).classList.add('active');
-}
+const mataKuliah = {
+    "SI101": { matakuliah : "Pemrograman Dasar", kelas : "A", sks : 3},
+    "SI102": { matakuliah : "Algoritma", kelas : "B", sks : 4},
+    "SI103": { matakuliah : "Matematika Diskrit", kelas : "A", sks : 4},
+    "SI104": { matakuliah : "Aplikasi Perkantoran", kelas : "C", sks : 2},
+    "SI105": { matakuliah : "Pengembangan Aplikasi Web II", kelas : "B", sks : 3},
+    "SI106": { matakuliah : "Gudang Data", kelas : "C", sks : 2},
+};
 
-document.getElementById('krsForm').addEventListener('submit', function(event) {
-    event.preventDefault();
-    
-    const course = document.getElementById('course').value;
-    const credits = document.getElementById('credits').value;
-    
-    const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `<p>Mata Kuliah: ${course} | SKS: ${credits}</p>`;
-    
-    // Reset form
-    this.reset();
+document.getElementById('kodeMataKuliah').addEventListener('input', function(){
+    const kodeMataKuliah = this.value;
+    const result = mataKuliah[kodeMataKuliah];
+        if (result) {
+            document.getElementById('mataKuliah').value = result.mataKuliah;
+            document.getElementById('kelas').value = result.kelas;
+            document.getElementById('sks').value = result.sks;
+        } else {
+            document.getElementById('mataKuliah').value = '';
+            document.getElementById('kelas').value = '';
+            document.getElementById('sks').value = '';
+        }
 });
