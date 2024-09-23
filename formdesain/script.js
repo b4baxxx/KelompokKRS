@@ -52,4 +52,5 @@ document.getElementById('krsForm'),addEventListener('submit', function(e){
         document.getElementById('kelas').value = '';
         document.getElementById('sks').value = '';
     }
+   
 });
