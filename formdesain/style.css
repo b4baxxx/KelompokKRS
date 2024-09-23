@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f0f4f8;
+    background-color: #0a82fb;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,10 +12,10 @@ body {
 .container {
     max-width: 600px;
     width: 100%;
-    background: #ffffff;
+    background: #eaf2f8;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 15px rgba(251, 249, 249, 0.2);
 }
 
 h1 {
@@ -31,13 +31,13 @@ label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-    color: #333;
+    color: #0c0c0c;
 }
 
 input[type="text"] {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid #090909;
     border-radius: 4px;
     font-size: 16px;
 }
@@ -45,17 +45,23 @@ input[type="text"] {
 button {
     width: 100%;
     padding: 10px;
-    background-color: #28a745;
+    background-color: #040404;
     color: white;
     border: none;
     border-radius: 4px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
+    margin-top: 10px;
+}
+
+.button-secondary {
+    background-color: #28a745; /* Warna untuk tombol sekunder */
+    color: white;
 }
 
 button:hover {
-    background-color: #218838;
+    background-color: #070707;
 }
 
 table {
@@ -65,7 +71,7 @@ table {
 }
 
 th, td {
-    border: 1px solid #ccc;
+    border: 1px solid #f4f1f1;
     padding: 10px;
     text-align: left;
 }

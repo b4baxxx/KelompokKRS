@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Riwayat Pengisian KRS</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Riwayat Pengisian KRS</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kode Mata Kuliah</th>
+                    <th>Mata Kuliah</th>
+                    <th>Kelas</th>
+                    <th>SKS</th>
+                </tr>
+            </thead>
+            <tbody id="riwayatTableBody">
+            </tbody>
+        </table>
+        <button onclick="kembali()">Kembali</button>
+    </div>
+
+    <script>
+        function kembali(){
+            window.history.back();
+        }
+
+        const riwayatData = JSON.parse(localStorage.getItem('krsData')) || [];
+        const tableBody = document.getElementById('riwayatTableBody');
+
+        riwayatData.forEach(item => {
+            const newRow = tableBody.insertRow();
+            newRow.insertCell(0).innertText = item.kodeMataKuliah; 
+            newRow.insertCell(1).innertText = item.mataKuliah; 
+            newRow.insertCell(2).innertText = item.kelas; 
+            newRow.insertCell(3).innertText = item.sks; 
+        });
+    </script>
+    <a href="index.html">Kembali Kehalaman utama</a>
+</body>
+</html>
