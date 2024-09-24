@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
-    background-color: #6767e6;
-    color: #333;
+    background-color: #ffffff;
+    color: #000000;
 }
 
 .container {
@@ -19,7 +19,7 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 /* Navbar Styles */
@@ -27,7 +27,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #003366;
+    background-color: #4a83bb;
     padding: 15px 30px;
     color: rgb(217, 208, 208);
 }
@@ -59,7 +59,7 @@ a {
 
 /* Hero Section */
 .hero-section {
-    background: url('logo') no-repeat center center/cover;
+    background: url('banner-jurusan.jpg') no-repeat center center/cover;
     color: rgb(255, 255, 255);
     height: 400px;
     display: flex;
@@ -80,7 +80,7 @@ a {
 
 .btn {
     padding: 10px 20px;
-    background-color: #ff6347;
+    background-color: #d81010;
     color: white;
     font-size: 18px;
     border-radius: 5px;
@@ -117,7 +117,7 @@ a {
 /* Faculty Section */
 .faculty-section {
     padding: 50px 20px;
-    background-color: #95ff00;
+    background-color: #000000;
     text-align: center;
 }
 
@@ -129,7 +129,7 @@ a {
 
 .faculty-item {
     width: 23%;
-    background-color: #95ff00;
+    background-color: #d81010;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
@@ -138,7 +138,7 @@ a {
 /* Contact Section */
 .contact-section {
     padding: 50px 20px;
-    background-color: #95ff00;
+    background-color: #d81010;
     text-align: center;
 }
 
@@ -167,12 +167,12 @@ a {
 
 #form-response {
     margin-top: 20px;
-    color: green;
+    color: rgb(0, 255, 0);
 }
 
 /* Footer */
 footer {
-    background-color: #95ff00;
+    background-color: #d81010;
     color: white;
     text-align: center;
     padding: 20px 0;
