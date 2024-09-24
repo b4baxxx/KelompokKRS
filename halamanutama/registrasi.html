@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Verifikasi Registrasi Mahasiswa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Verifikasi Data Registrasi</h1>
+
+    <div class="verification-info">
+      <p>Silakan verifikasi data registrasi Anda sebelum melanjutkan ke pengisian KRS:</p>
+      <p><strong>Nama:</strong> John Doe</p>
+      <p><strong>NIM:</strong> 123456</p>
+      <p><strong>Program Studi:</strong> Teknik Informatika</p>
+      <p><strong>Email:</strong> johndoe@example.com</p>
+    </div>
+
+    <div class="form-group">
+      <label for="verification-code">Masukkan Kode Verifikasi:</label>
+      <input type="text" id="verification-code" name="verification-code" required>
+    </div>
+
+    <div class="form-group">
+      <button onclick="verifyRegistration()" class="button-primary">Verifikasi</button>
+    </div>
+  </div>
+
+  <script src="verification.js"></script>
+</body>
+</html>
