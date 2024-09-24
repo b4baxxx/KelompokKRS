@@ -12,7 +12,7 @@
             <div class="logo"></div>
             <img src="logomdp.png" alt="Logo Universitas" style="width: 100px; height: auto; left: auto;">
 
-            <h1>Universitas Terbaik </h1>
+            <h1>Universitas MDP</h1>
         </div>
         <nav>
             <ul>
@@ -48,9 +48,9 @@
                     <p>Universitas Terbaik telah menerima berbagai penghargaan dari lembaga nasional sebagai universitas dengan kualitas pendidikan terbaik.</p>
                 </div>
                 <div class="about-item">
-                    <img src="alumni.jpg" alt="Alumni">
+                    <img src="alumni.png" alt="Alumni">
                     <h3>Jaringan Alumni</h3>
-                    <p>Jaringan alumni kami tersebar di berbagai bidang industri, menyediakan peluang karir yang luas bagi lulusan.</p>
+                    <p>Jaringan alumni kami tersebar di berbagai bidang teknologi, menyediakan peluang karir yang luas bagi lulusan.</p>
                 </div>
             </div>
         </div>
@@ -66,20 +66,31 @@
         </div>
     </section>
 
-    <section id="contact" class="faculty-item">
+    <section id="contact" class="contact-section">
         <div class="container">
             <h2>Kontak Kami</h2>
-            <p>Alamat: Jl. Pendidikan No. 123, Kota Pendidikan</p>
-            <p>Email: info@universitasterbaik.ac.id</p>
-            <p>Telepon: (021) 123-4567</p>
+            <form id="contact-form">
+                <label for="name">Nama:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Pesan:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit" class="btn">Kirim</button>
+            </form>
+            <p id="form-response"></p>
         </div>
     </section>
 
     <footer>
-        <div class="container" class="faculty-item">
+        <div class="container">
             <p>&copy; 2024 Universitas Terbaik. All rights reserved.</p>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
     
