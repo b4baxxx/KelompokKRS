@@ -3,10 +3,10 @@ const MataKuliahData = {
     "SI102": {mataKuliah : "Aplikasi Perkantoran", kelas : "B", sks : 2},
     "SI103": {mataKuliah : "Gudang Data", kelas : "C", sks : 2},
     "SI104": {mataKuliah : "Pengembangan Aplikasi Web II", kelas : "A", sks : 3},
-    "SI105": {mataKuliah : "Sistem Basis Data", kelas : "C", sks : 4},
+    "IF105": {mataKuliah : "Sistem Basis Data", kelas : "C", sks : 4},
     "SI106": {mataKuliah : "Matematika Dasar", kelas : "A", sks : 4},
     "SI107": {mataKuliah : "Penelitian Sistem Informasi", kelas : "D", sks : 4},
-    "SI108": {mataKuliah : "Pemograman Berbasis Objek 1", kelas : "B", sks : 3},
+    "IF108": {mataKuliah : "Pemograman Berbasis Objek 1", kelas : "B", sks : 3},
 };
 
 document.getElementById('kodeMataKuliah').addEventListener('input', function(){
